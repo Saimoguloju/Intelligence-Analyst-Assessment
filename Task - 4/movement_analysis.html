@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cc8831dfb74754961bc6705ca2cf2fbc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cc8831dfb74754961bc6705ca2cf2fbc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cc8831dfb74754961bc6705ca2cf2fbc = L.map(
+                "map_cc8831dfb74754961bc6705ca2cf2fbc",
+                {
+                    center: [28.70555, 77.10638],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_918ea2cc1b2cc1e2478e503ff4f37fa9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_918ea2cc1b2cc1e2478e503ff4f37fa9.addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var marker_db9720984e3d8bbab000a0d50fc2d8aa = L.marker(
+                [28.7041, 77.1025],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_5f5dadc9b988f3e2510410d09f81f82e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_db9720984e3d8bbab000a0d50fc2d8aa.setIcon(icon_5f5dadc9b988f3e2510410d09f81f82e);
+        
+    
+        var popup_2657a91ae27ce1ab8142b179f399dcc9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c08a4b601118fac23d8318a936963da3 = $(`<div id="html_c08a4b601118fac23d8318a936963da3" style="width: 100.0%; height: 100.0%;">Location: Border Post Alpha Movement: Entry Timestamp: 2024-03-01 07:15:00</div>`)[0];
+                popup_2657a91ae27ce1ab8142b179f399dcc9.setContent(html_c08a4b601118fac23d8318a936963da3);
+            
+        
+
+        marker_db9720984e3d8bbab000a0d50fc2d8aa.bindPopup(popup_2657a91ae27ce1ab8142b179f399dcc9)
+        ;
+
+        
+    
+    
+            var marker_3e2c5eaec5af2f9ea228869bb23f56ba = L.marker(
+                [28.7042, 77.103],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_c1f17b588757d094cd3d70392bd74c9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3e2c5eaec5af2f9ea228869bb23f56ba.setIcon(icon_c1f17b588757d094cd3d70392bd74c9f);
+        
+    
+        var popup_960150af3cff4b05d830849e8e18a355 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5dc583d345e4bca1ddb632ce5ffc7f30 = $(`<div id="html_5dc583d345e4bca1ddb632ce5ffc7f30" style="width: 100.0%; height: 100.0%;">Location: Border Post Alpha Movement: Exit Timestamp: 2024-03-02 12:30:00</div>`)[0];
+                popup_960150af3cff4b05d830849e8e18a355.setContent(html_5dc583d345e4bca1ddb632ce5ffc7f30);
+            
+        
+
+        marker_3e2c5eaec5af2f9ea228869bb23f56ba.bindPopup(popup_960150af3cff4b05d830849e8e18a355)
+        ;
+
+        
+    
+    
+            var marker_3aff6b27675b88c6c23f327bd08ff887 = L.marker(
+                [28.7043, 77.1032],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_dacf0c87b042eff9f4c73acf0e125116 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3aff6b27675b88c6c23f327bd08ff887.setIcon(icon_dacf0c87b042eff9f4c73acf0e125116);
+        
+    
+        var popup_2e3508e42164a68404740a9280922f4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87048d6004634d1df6a8ec7fcdc529be = $(`<div id="html_87048d6004634d1df6a8ec7fcdc529be" style="width: 100.0%; height: 100.0%;">Location: Border Post Alpha Movement: Entry Timestamp: 2024-03-05 08:15:00</div>`)[0];
+                popup_2e3508e42164a68404740a9280922f4a.setContent(html_87048d6004634d1df6a8ec7fcdc529be);
+            
+        
+
+        marker_3aff6b27675b88c6c23f327bd08ff887.bindPopup(popup_2e3508e42164a68404740a9280922f4a)
+        ;
+
+        
+    
+    
+            var marker_f9dc6f78e94f736b8253f6efd26f5a3f = L.marker(
+                [28.7044, 77.1035],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_f6ffe9831bc7be805df510ee2bfe8016 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f9dc6f78e94f736b8253f6efd26f5a3f.setIcon(icon_f6ffe9831bc7be805df510ee2bfe8016);
+        
+    
+        var popup_8dfd687512679a201865a7aded2c5234 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54ba8e2ca91208d9d505da0d821125ab = $(`<div id="html_54ba8e2ca91208d9d505da0d821125ab" style="width: 100.0%; height: 100.0%;">Location: Border Post Alpha Movement: Exit Timestamp: 2024-03-07 10:00:00</div>`)[0];
+                popup_8dfd687512679a201865a7aded2c5234.setContent(html_54ba8e2ca91208d9d505da0d821125ab);
+            
+        
+
+        marker_f9dc6f78e94f736b8253f6efd26f5a3f.bindPopup(popup_8dfd687512679a201865a7aded2c5234)
+        ;
+
+        
+    
+    
+            var marker_ead9f1b783ef5fda99fec5cecb3dad67 = L.marker(
+                [28.7045, 77.1038],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_1f33262f7b4c79bc9d555f50c4119ad2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ead9f1b783ef5fda99fec5cecb3dad67.setIcon(icon_1f33262f7b4c79bc9d555f50c4119ad2);
+        
+    
+        var popup_893ce0246cb668063c9a6df91ed00584 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ba527e945b7418aa8c67539b482705f = $(`<div id="html_1ba527e945b7418aa8c67539b482705f" style="width: 100.0%; height: 100.0%;">Location: Border Post Alpha Movement: Entry Timestamp: 2024-03-09 14:45:00</div>`)[0];
+                popup_893ce0246cb668063c9a6df91ed00584.setContent(html_1ba527e945b7418aa8c67539b482705f);
+            
+        
+
+        marker_ead9f1b783ef5fda99fec5cecb3dad67.bindPopup(popup_893ce0246cb668063c9a6df91ed00584)
+        ;
+
+        
+    
+    
+            var marker_4295630e9c0421e291f37cad148661b4 = L.marker(
+                [28.7046, 77.104],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_d226e23d924df10701946671dbc46def = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4295630e9c0421e291f37cad148661b4.setIcon(icon_d226e23d924df10701946671dbc46def);
+        
+    
+        var popup_a2da5ce6e8691453e8ed1b79a480ba64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b466b6b9d0aa7d1667792e21abde026d = $(`<div id="html_b466b6b9d0aa7d1667792e21abde026d" style="width: 100.0%; height: 100.0%;">Location: Border Post Bravo Movement: Entry Timestamp: 2024-03-12 16:20:00</div>`)[0];
+                popup_a2da5ce6e8691453e8ed1b79a480ba64.setContent(html_b466b6b9d0aa7d1667792e21abde026d);
+            
+        
+
+        marker_4295630e9c0421e291f37cad148661b4.bindPopup(popup_a2da5ce6e8691453e8ed1b79a480ba64)
+        ;
+
+        
+    
+    
+            var marker_5431e491b6cc3a7aa875412195f72ae0 = L.marker(
+                [28.7047, 77.1042],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_a0586f41420815b07b98ad966e3ca079 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5431e491b6cc3a7aa875412195f72ae0.setIcon(icon_a0586f41420815b07b98ad966e3ca079);
+        
+    
+        var popup_dfeb88bfbc49ee4f16c4d196214ad48f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7d5743d25779c808945120d939e1b33 = $(`<div id="html_a7d5743d25779c808945120d939e1b33" style="width: 100.0%; height: 100.0%;">Location: Border Post Bravo Movement: Exit Timestamp: 2024-03-14 11:50:00</div>`)[0];
+                popup_dfeb88bfbc49ee4f16c4d196214ad48f.setContent(html_a7d5743d25779c808945120d939e1b33);
+            
+        
+
+        marker_5431e491b6cc3a7aa875412195f72ae0.bindPopup(popup_dfeb88bfbc49ee4f16c4d196214ad48f)
+        ;
+
+        
+    
+    
+            var marker_af4c7da02190ff6c3083757a0cf061c1 = L.marker(
+                [28.7048, 77.1045],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_a742baf27a18f47e91936f28bf28b9cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_af4c7da02190ff6c3083757a0cf061c1.setIcon(icon_a742baf27a18f47e91936f28bf28b9cb);
+        
+    
+        var popup_34ccc2831381614f149b36d1f7fdbd59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d731ed5b69daa5d23c061f772dbc093 = $(`<div id="html_5d731ed5b69daa5d23c061f772dbc093" style="width: 100.0%; height: 100.0%;">Location: Border Post Bravo Movement: Entry Timestamp: 2024-03-17 13:30:00</div>`)[0];
+                popup_34ccc2831381614f149b36d1f7fdbd59.setContent(html_5d731ed5b69daa5d23c061f772dbc093);
+            
+        
+
+        marker_af4c7da02190ff6c3083757a0cf061c1.bindPopup(popup_34ccc2831381614f149b36d1f7fdbd59)
+        ;
+
+        
+    
+    
+            var marker_7b702f87c98dbc9b84584fb1ddd55238 = L.marker(
+                [28.7049, 77.1048],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_e4533d370cfead826e6f73c5bbf455eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7b702f87c98dbc9b84584fb1ddd55238.setIcon(icon_e4533d370cfead826e6f73c5bbf455eb);
+        
+    
+        var popup_356b293ae98a77f187d75cf09b041200 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bcbf5db24eabeef49e56d9727f51787 = $(`<div id="html_6bcbf5db24eabeef49e56d9727f51787" style="width: 100.0%; height: 100.0%;">Location: Border Post Bravo Movement: Exit Timestamp: 2024-03-19 15:00:00</div>`)[0];
+                popup_356b293ae98a77f187d75cf09b041200.setContent(html_6bcbf5db24eabeef49e56d9727f51787);
+            
+        
+
+        marker_7b702f87c98dbc9b84584fb1ddd55238.bindPopup(popup_356b293ae98a77f187d75cf09b041200)
+        ;
+
+        
+    
+    
+            var marker_7e5a61690f31aa8e00f9fdbdefca3782 = L.marker(
+                [28.705, 77.105],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_2807587792eb451315fccc4b4f31f89f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7e5a61690f31aa8e00f9fdbdefca3782.setIcon(icon_2807587792eb451315fccc4b4f31f89f);
+        
+    
+        var popup_6b7ada39b48a19119149ee86ecfae591 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d9933bf1e32e1c397253ef4be8137ba = $(`<div id="html_7d9933bf1e32e1c397253ef4be8137ba" style="width: 100.0%; height: 100.0%;">Location: Border Post Bravo Movement: Entry Timestamp: 2024-03-22 08:25:00</div>`)[0];
+                popup_6b7ada39b48a19119149ee86ecfae591.setContent(html_7d9933bf1e32e1c397253ef4be8137ba);
+            
+        
+
+        marker_7e5a61690f31aa8e00f9fdbdefca3782.bindPopup(popup_6b7ada39b48a19119149ee86ecfae591)
+        ;
+
+        
+    
+    
+            var marker_c0e6e60f342b504e9f198aee49c3ab97 = L.marker(
+                [28.7051, 77.1052],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_107d5e6898b477d1fec4eaeb5a434f57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c0e6e60f342b504e9f198aee49c3ab97.setIcon(icon_107d5e6898b477d1fec4eaeb5a434f57);
+        
+    
+        var popup_6bc9447489430bbab5739a2ec9263a7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f894d3fa18aaca8f1bd434eac87f4252 = $(`<div id="html_f894d3fa18aaca8f1bd434eac87f4252" style="width: 100.0%; height: 100.0%;">Location: Border Post Bravo Movement: Exit Timestamp: 2024-03-24 12:10:00</div>`)[0];
+                popup_6bc9447489430bbab5739a2ec9263a7a.setContent(html_f894d3fa18aaca8f1bd434eac87f4252);
+            
+        
+
+        marker_c0e6e60f342b504e9f198aee49c3ab97.bindPopup(popup_6bc9447489430bbab5739a2ec9263a7a)
+        ;
+
+        
+    
+    
+            var marker_4ed822458cb8fbd539949823035f49c5 = L.marker(
+                [28.7052, 77.1055],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_7e62ebc286a4a80618232bfcd44e8462 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4ed822458cb8fbd539949823035f49c5.setIcon(icon_7e62ebc286a4a80618232bfcd44e8462);
+        
+    
+        var popup_6597a48b1d60628b6302493440e2d88f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c01dded5aca62a03fb91a7556cbbf4e7 = $(`<div id="html_c01dded5aca62a03fb91a7556cbbf4e7" style="width: 100.0%; height: 100.0%;">Location: Border Post Charlie Movement: Entry Timestamp: 2024-03-27 16:50:00</div>`)[0];
+                popup_6597a48b1d60628b6302493440e2d88f.setContent(html_c01dded5aca62a03fb91a7556cbbf4e7);
+            
+        
+
+        marker_4ed822458cb8fbd539949823035f49c5.bindPopup(popup_6597a48b1d60628b6302493440e2d88f)
+        ;
+
+        
+    
+    
+            var marker_224067607b2c148de3a76b2d2422b60c = L.marker(
+                [28.7053, 77.1058],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_a02e9fdf759a2134467f38b7885241d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_224067607b2c148de3a76b2d2422b60c.setIcon(icon_a02e9fdf759a2134467f38b7885241d7);
+        
+    
+        var popup_282e2ed5deefa2099c3d0b7a5b2f01e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eef794b4d4689941c0b78d1d735129c5 = $(`<div id="html_eef794b4d4689941c0b78d1d735129c5" style="width: 100.0%; height: 100.0%;">Location: Border Post Charlie Movement: Exit Timestamp: 2024-03-29 14:20:00</div>`)[0];
+                popup_282e2ed5deefa2099c3d0b7a5b2f01e2.setContent(html_eef794b4d4689941c0b78d1d735129c5);
+            
+        
+
+        marker_224067607b2c148de3a76b2d2422b60c.bindPopup(popup_282e2ed5deefa2099c3d0b7a5b2f01e2)
+        ;
+
+        
+    
+    
+            var marker_6c2153c05afb330704a7e1520e1ec599 = L.marker(
+                [28.7054, 77.106],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_0399b1b1dd3096a85c27c49b22445d0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6c2153c05afb330704a7e1520e1ec599.setIcon(icon_0399b1b1dd3096a85c27c49b22445d0f);
+        
+    
+        var popup_aca42492bad2c42194715817f6850cb0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ec8063a031ba3a934996c43b6725261 = $(`<div id="html_0ec8063a031ba3a934996c43b6725261" style="width: 100.0%; height: 100.0%;">Location: Border Post Charlie Movement: Entry Timestamp: 2024-04-01 07:30:00</div>`)[0];
+                popup_aca42492bad2c42194715817f6850cb0.setContent(html_0ec8063a031ba3a934996c43b6725261);
+            
+        
+
+        marker_6c2153c05afb330704a7e1520e1ec599.bindPopup(popup_aca42492bad2c42194715817f6850cb0)
+        ;
+
+        
+    
+    
+            var marker_1770980689a3b1c62cd3eb0b166ae85a = L.marker(
+                [28.7055, 77.1063],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_6dd8b233793eccea01cab1c87c92d8ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1770980689a3b1c62cd3eb0b166ae85a.setIcon(icon_6dd8b233793eccea01cab1c87c92d8ac);
+        
+    
+        var popup_b23e8ae38af48c00b785029c803248b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21e85df57527a5d0300a5cbcbf59d2a7 = $(`<div id="html_21e85df57527a5d0300a5cbcbf59d2a7" style="width: 100.0%; height: 100.0%;">Location: Border Post Charlie Movement: Exit Timestamp: 2024-04-03 15:00:00</div>`)[0];
+                popup_b23e8ae38af48c00b785029c803248b7.setContent(html_21e85df57527a5d0300a5cbcbf59d2a7);
+            
+        
+
+        marker_1770980689a3b1c62cd3eb0b166ae85a.bindPopup(popup_b23e8ae38af48c00b785029c803248b7)
+        ;
+
+        
+    
+    
+            var marker_c8dcd0dbb8d1306f0331fc6db355ff6c = L.marker(
+                [28.7056, 77.1065],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_05188dc8321b0201d42d22c8949cd7c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c8dcd0dbb8d1306f0331fc6db355ff6c.setIcon(icon_05188dc8321b0201d42d22c8949cd7c9);
+        
+    
+        var popup_22ab0ce803ecdbbe7c658abfed804a98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e1b0e1f662e0b063330f60224c848f7 = $(`<div id="html_4e1b0e1f662e0b063330f60224c848f7" style="width: 100.0%; height: 100.0%;">Location: Border Post Charlie Movement: Entry Timestamp: 2024-04-05 10:30:00</div>`)[0];
+                popup_22ab0ce803ecdbbe7c658abfed804a98.setContent(html_4e1b0e1f662e0b063330f60224c848f7);
+            
+        
+
+        marker_c8dcd0dbb8d1306f0331fc6db355ff6c.bindPopup(popup_22ab0ce803ecdbbe7c658abfed804a98)
+        ;
+
+        
+    
+    
+            var marker_e63d273b2627d7ce42a7ce27f5ea36da = L.marker(
+                [28.7057, 77.1068],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_66558615e12c13683280a5537722f029 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e63d273b2627d7ce42a7ce27f5ea36da.setIcon(icon_66558615e12c13683280a5537722f029);
+        
+    
+        var popup_63e00979a062d9412219790eed13ccd5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2776a769d05f8b31fcd49f30cbe4a4f3 = $(`<div id="html_2776a769d05f8b31fcd49f30cbe4a4f3" style="width: 100.0%; height: 100.0%;">Location: Border Post Charlie Movement: Exit Timestamp: 2024-04-07 09:20:00</div>`)[0];
+                popup_63e00979a062d9412219790eed13ccd5.setContent(html_2776a769d05f8b31fcd49f30cbe4a4f3);
+            
+        
+
+        marker_e63d273b2627d7ce42a7ce27f5ea36da.bindPopup(popup_63e00979a062d9412219790eed13ccd5)
+        ;
+
+        
+    
+    
+            var marker_bd67578e6d4c5b9939709922cce9434f = L.marker(
+                [28.7058, 77.107],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_2f5cb9bcbf327c06e54acc9e7d7ecd51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bd67578e6d4c5b9939709922cce9434f.setIcon(icon_2f5cb9bcbf327c06e54acc9e7d7ecd51);
+        
+    
+        var popup_836d971b392adbf5ec97a68a0c3391ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b44829e3617c2152e294966e85a50868 = $(`<div id="html_b44829e3617c2152e294966e85a50868" style="width: 100.0%; height: 100.0%;">Location: Border Post Delta Movement: Entry Timestamp: 2024-04-10 14:10:00</div>`)[0];
+                popup_836d971b392adbf5ec97a68a0c3391ef.setContent(html_b44829e3617c2152e294966e85a50868);
+            
+        
+
+        marker_bd67578e6d4c5b9939709922cce9434f.bindPopup(popup_836d971b392adbf5ec97a68a0c3391ef)
+        ;
+
+        
+    
+    
+            var marker_2f9fa881c18277c5201d2fa00b94a197 = L.marker(
+                [28.7059, 77.1073],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_d54eb8b7ae1a3b65bccd07738c5f4623 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2f9fa881c18277c5201d2fa00b94a197.setIcon(icon_d54eb8b7ae1a3b65bccd07738c5f4623);
+        
+    
+        var popup_d282956d42c2cd8d9b471b13910ccf5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc1d68a947fa201ed96d3dc76c73a913 = $(`<div id="html_cc1d68a947fa201ed96d3dc76c73a913" style="width: 100.0%; height: 100.0%;">Location: Border Post Delta Movement: Exit Timestamp: 2024-04-12 12:45:00</div>`)[0];
+                popup_d282956d42c2cd8d9b471b13910ccf5b.setContent(html_cc1d68a947fa201ed96d3dc76c73a913);
+            
+        
+
+        marker_2f9fa881c18277c5201d2fa00b94a197.bindPopup(popup_d282956d42c2cd8d9b471b13910ccf5b)
+        ;
+
+        
+    
+    
+            var marker_8b76e215474e7c6efc21cfa2a40dbca3 = L.marker(
+                [28.706, 77.1075],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_d698ed08bae9e5e8e13b71693d2acdcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8b76e215474e7c6efc21cfa2a40dbca3.setIcon(icon_d698ed08bae9e5e8e13b71693d2acdcd);
+        
+    
+        var popup_54188f7bb3a2175c418bcb0d06d6d45d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f8b0dd18a027137cddb01c6393be3de = $(`<div id="html_1f8b0dd18a027137cddb01c6393be3de" style="width: 100.0%; height: 100.0%;">Location: Border Post Delta Movement: Entry Timestamp: 2024-04-15 11:00:00</div>`)[0];
+                popup_54188f7bb3a2175c418bcb0d06d6d45d.setContent(html_1f8b0dd18a027137cddb01c6393be3de);
+            
+        
+
+        marker_8b76e215474e7c6efc21cfa2a40dbca3.bindPopup(popup_54188f7bb3a2175c418bcb0d06d6d45d)
+        ;
+
+        
+    
+    
+            var marker_8ded9b0822f8a2e358f4698c498d9036 = L.marker(
+                [28.7061, 77.1078],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_72ad325b08315733c53d7bce36129bb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8ded9b0822f8a2e358f4698c498d9036.setIcon(icon_72ad325b08315733c53d7bce36129bb7);
+        
+    
+        var popup_d972135ad59c64aed1dc02e4637aee8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a6bc9ea92b3083f43f04ff613fe4df3 = $(`<div id="html_1a6bc9ea92b3083f43f04ff613fe4df3" style="width: 100.0%; height: 100.0%;">Location: Border Post Delta Movement: Exit Timestamp: 2024-04-17 13:30:00</div>`)[0];
+                popup_d972135ad59c64aed1dc02e4637aee8a.setContent(html_1a6bc9ea92b3083f43f04ff613fe4df3);
+            
+        
+
+        marker_8ded9b0822f8a2e358f4698c498d9036.bindPopup(popup_d972135ad59c64aed1dc02e4637aee8a)
+        ;
+
+        
+    
+    
+            var marker_fc584f08835376618bca4cefe9a7c7f8 = L.marker(
+                [28.7062, 77.108],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_7bd2556404a40dc3cfa2f4bbaad9fb1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fc584f08835376618bca4cefe9a7c7f8.setIcon(icon_7bd2556404a40dc3cfa2f4bbaad9fb1e);
+        
+    
+        var popup_72c50f95fd18f25af1b87bbf0ac9d143 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4b0046e27ef727779f13bad46e75dda = $(`<div id="html_f4b0046e27ef727779f13bad46e75dda" style="width: 100.0%; height: 100.0%;">Location: Border Post Delta Movement: Entry Timestamp: 2024-04-19 08:40:00</div>`)[0];
+                popup_72c50f95fd18f25af1b87bbf0ac9d143.setContent(html_f4b0046e27ef727779f13bad46e75dda);
+            
+        
+
+        marker_fc584f08835376618bca4cefe9a7c7f8.bindPopup(popup_72c50f95fd18f25af1b87bbf0ac9d143)
+        ;
+
+        
+    
+    
+            var marker_d15adbdddd12865f279420db0071ad8d = L.marker(
+                [28.7063, 77.1083],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_68ebda5d6c3469c097d3cd7fbf5871b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d15adbdddd12865f279420db0071ad8d.setIcon(icon_68ebda5d6c3469c097d3cd7fbf5871b3);
+        
+    
+        var popup_e539235e22aa502805a3255230185021 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c42206522b21cc9e63b49123c8c6eaff = $(`<div id="html_c42206522b21cc9e63b49123c8c6eaff" style="width: 100.0%; height: 100.0%;">Location: Border Post Delta Movement: Exit Timestamp: 2024-04-22 07:50:00</div>`)[0];
+                popup_e539235e22aa502805a3255230185021.setContent(html_c42206522b21cc9e63b49123c8c6eaff);
+            
+        
+
+        marker_d15adbdddd12865f279420db0071ad8d.bindPopup(popup_e539235e22aa502805a3255230185021)
+        ;
+
+        
+    
+    
+            var marker_f46acafb438bc3727dd4f553553c64e2 = L.marker(
+                [28.7064, 77.1085],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_8c3b872a60440738317df7739538f889 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f46acafb438bc3727dd4f553553c64e2.setIcon(icon_8c3b872a60440738317df7739538f889);
+        
+    
+        var popup_79ad8266f8115ec18a8bc961c597eb55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ec5341d593d026e7532d790a286b381 = $(`<div id="html_4ec5341d593d026e7532d790a286b381" style="width: 100.0%; height: 100.0%;">Location: Border Post Echo Movement: Entry Timestamp: 2024-04-24 10:20:00</div>`)[0];
+                popup_79ad8266f8115ec18a8bc961c597eb55.setContent(html_4ec5341d593d026e7532d790a286b381);
+            
+        
+
+        marker_f46acafb438bc3727dd4f553553c64e2.bindPopup(popup_79ad8266f8115ec18a8bc961c597eb55)
+        ;
+
+        
+    
+    
+            var marker_ae76ba95451c69dfd2014e20c43d9928 = L.marker(
+                [28.7065, 77.1088],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_be06de5fa474d62840e1003c12a6252a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ae76ba95451c69dfd2014e20c43d9928.setIcon(icon_be06de5fa474d62840e1003c12a6252a);
+        
+    
+        var popup_7a76c9a6b5e499b1c8e8864921f185d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23b938dc97118fa1d0fdebe466e09dbc = $(`<div id="html_23b938dc97118fa1d0fdebe466e09dbc" style="width: 100.0%; height: 100.0%;">Location: Border Post Echo Movement: Exit Timestamp: 2024-04-27 14:30:00</div>`)[0];
+                popup_7a76c9a6b5e499b1c8e8864921f185d3.setContent(html_23b938dc97118fa1d0fdebe466e09dbc);
+            
+        
+
+        marker_ae76ba95451c69dfd2014e20c43d9928.bindPopup(popup_7a76c9a6b5e499b1c8e8864921f185d3)
+        ;
+
+        
+    
+    
+            var marker_e4918fa3aafb6e4d33a0fc96d38669bb = L.marker(
+                [28.7066, 77.109],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_a7b894846607ce8283b277d9ecdd7112 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e4918fa3aafb6e4d33a0fc96d38669bb.setIcon(icon_a7b894846607ce8283b277d9ecdd7112);
+        
+    
+        var popup_7128ca6032fb0acc5e4fd2025f5c5831 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2387ca116f8d804f467347ddbbffb72e = $(`<div id="html_2387ca116f8d804f467347ddbbffb72e" style="width: 100.0%; height: 100.0%;">Location: Border Post Echo Movement: Entry Timestamp: 2024-04-29 12:15:00</div>`)[0];
+                popup_7128ca6032fb0acc5e4fd2025f5c5831.setContent(html_2387ca116f8d804f467347ddbbffb72e);
+            
+        
+
+        marker_e4918fa3aafb6e4d33a0fc96d38669bb.bindPopup(popup_7128ca6032fb0acc5e4fd2025f5c5831)
+        ;
+
+        
+    
+    
+            var marker_33744a72ef5c4366beb18d1e32f03bf8 = L.marker(
+                [28.7067, 77.1093],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_8f8752e1cd808ed3add2f6ea4a9a79ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_33744a72ef5c4366beb18d1e32f03bf8.setIcon(icon_8f8752e1cd808ed3add2f6ea4a9a79ec);
+        
+    
+        var popup_80667766124e8b7bea10fe700e1cc630 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37b1e2b20d0fec8a4b80f28aedcf9afc = $(`<div id="html_37b1e2b20d0fec8a4b80f28aedcf9afc" style="width: 100.0%; height: 100.0%;">Location: Border Post Echo Movement: Exit Timestamp: 2024-05-02 09:10:00</div>`)[0];
+                popup_80667766124e8b7bea10fe700e1cc630.setContent(html_37b1e2b20d0fec8a4b80f28aedcf9afc);
+            
+        
+
+        marker_33744a72ef5c4366beb18d1e32f03bf8.bindPopup(popup_80667766124e8b7bea10fe700e1cc630)
+        ;
+
+        
+    
+    
+            var marker_2c5de34808e89deaa83a93823abc053d = L.marker(
+                [28.7068, 77.1095],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_8f7e9bb75ede4421333c1a8d9d006e41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2c5de34808e89deaa83a93823abc053d.setIcon(icon_8f7e9bb75ede4421333c1a8d9d006e41);
+        
+    
+        var popup_5cfd6a846f85edfc12d2271754bcb763 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_166c17a4872357ff17847b7d6fa844fc = $(`<div id="html_166c17a4872357ff17847b7d6fa844fc" style="width: 100.0%; height: 100.0%;">Location: Border Post Echo Movement: Entry Timestamp: 2024-05-04 07:25:00</div>`)[0];
+                popup_5cfd6a846f85edfc12d2271754bcb763.setContent(html_166c17a4872357ff17847b7d6fa844fc);
+            
+        
+
+        marker_2c5de34808e89deaa83a93823abc053d.bindPopup(popup_5cfd6a846f85edfc12d2271754bcb763)
+        ;
+
+        
+    
+    
+            var marker_9cfbf9266ece901a985b237dc60487f1 = L.marker(
+                [28.7069, 77.1098],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_de072091c756da8e4379d591984528d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9cfbf9266ece901a985b237dc60487f1.setIcon(icon_de072091c756da8e4379d591984528d7);
+        
+    
+        var popup_db24ad065cffce7a12f0b232e0619940 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60fc56150c63097be7403df77b88d8d9 = $(`<div id="html_60fc56150c63097be7403df77b88d8d9" style="width: 100.0%; height: 100.0%;">Location: Border Post Echo Movement: Exit Timestamp: 2024-05-07 14:40:00</div>`)[0];
+                popup_db24ad065cffce7a12f0b232e0619940.setContent(html_60fc56150c63097be7403df77b88d8d9);
+            
+        
+
+        marker_9cfbf9266ece901a985b237dc60487f1.bindPopup(popup_db24ad065cffce7a12f0b232e0619940)
+        ;
+
+        
+    
+    
+            var marker_88f8f301260643bfc65e59ec785d7a04 = L.marker(
+                [28.707, 77.11],
+                {}
+            ).addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+    
+            var icon_3d1682ea8e0cb20ff9a8f2d4046f27dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_88f8f301260643bfc65e59ec785d7a04.setIcon(icon_3d1682ea8e0cb20ff9a8f2d4046f27dc);
+        
+    
+        var popup_a9c4e90f7b9c96339167cd3e9366e18e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b78e93aa700817f49c7adc2d011d4d5 = $(`<div id="html_5b78e93aa700817f49c7adc2d011d4d5" style="width: 100.0%; height: 100.0%;">Location: Border Post Echo Movement: Entry Timestamp: 2024-05-09 08:55:00</div>`)[0];
+                popup_a9c4e90f7b9c96339167cd3e9366e18e.setContent(html_5b78e93aa700817f49c7adc2d011d4d5);
+            
+        
+
+        marker_88f8f301260643bfc65e59ec785d7a04.bindPopup(popup_a9c4e90f7b9c96339167cd3e9366e18e)
+        ;
+
+        
+    
+    
+            var heat_map_de5e1566fd7aa5256dcf54d43be5b7d2 = L.heatLayer(
+                [[28.7041, 77.1025], [28.7042, 77.103], [28.7043, 77.1032], [28.7044, 77.1035], [28.7045, 77.1038], [28.7046, 77.104], [28.7047, 77.1042], [28.7048, 77.1045], [28.7049, 77.1048], [28.705, 77.105], [28.7051, 77.1052], [28.7052, 77.1055], [28.7053, 77.1058], [28.7054, 77.106], [28.7055, 77.1063], [28.7056, 77.1065], [28.7057, 77.1068], [28.7058, 77.107], [28.7059, 77.1073], [28.706, 77.1075], [28.7061, 77.1078], [28.7062, 77.108], [28.7063, 77.1083], [28.7064, 77.1085], [28.7065, 77.1088], [28.7066, 77.109], [28.7067, 77.1093], [28.7068, 77.1095], [28.7069, 77.1098], [28.707, 77.11]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            );
+        
+    
+            heat_map_de5e1566fd7aa5256dcf54d43be5b7d2.addTo(map_cc8831dfb74754961bc6705ca2cf2fbc);
+        
+</script>
+</html>
